@@ -1,9 +1,9 @@
 {
   "name": "llm-text-embeddings",
   "build": {
+    "context": "..",
     "dockerfile": "Dockerfile"
   },
-  "postCreateCommand": "pip install -r requirements.txt",
   "customizations": {
     "vscode": {
       "settings": {

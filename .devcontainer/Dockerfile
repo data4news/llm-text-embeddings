@@ -8,4 +8,7 @@ RUN apt-get update \
         curl \
     && rm -rf /var/lib/apt/lists/*
 
+COPY requirements.txt /tmp/requirements.txt
+RUN pip install --no-cache-dir -r /tmp/requirements.txt
+
 WORKDIR /workspaces/llm-text-embeddings
